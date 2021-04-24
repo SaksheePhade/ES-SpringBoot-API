@@ -9,4 +9,6 @@ public interface MitreRepository extends ElasticsearchRepository<MitreModel, Str
 	
 	//List<MitreModel> findByTechniqueName(String Tname);
 	List<MitreModel> findByID(String ID);
+	List<MitreModel> findByTactic(String Tactic);
+	List<MitreModel> findByTacticAndID(String Tactic, String ID);
 }
